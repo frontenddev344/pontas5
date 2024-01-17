@@ -156,108 +156,6 @@ header.site-header.sticky {
 }
 
 /*header end*/
-/*home-css-start*/
-section.banner-section {
-  position: relative;
-  height: 550px;
-  background-image: url(../images/homebanner.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  object-fit: cover;
-}
-section.banner-section::before {
-  position: absolute;
-  content: "";
-  background: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  display: inline-block;
-}
-
-.homebanner-content {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-section.hometext {
-  padding: 50px 0;
-}
-
-.hometext-text p {
-  color: #0C0B0B;
-}
-
-.discover-picture img {
-  width: 100%;
-  height: 350px;
-  object-fit: cover;
-}
-.discover-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-}
-
-.discover-text.left {
-  padding-left: 20px;
-}
-
-.discover-text.right {
-  padding-right: 20px;
-}
-
-.traveltips-main {
-  box-shadow: 0px 0px 30px 0px rgba(199, 199, 199, 0.5);
-  padding: 10px 20px;
-  height: 100%;
-}
-
-span.travelblock {
-  font-size: 23px;
-  color: #969e69;
-}
-
-.travel {
-  padding: 50px 0;
-  position: relative;
-}
-.travel h3 {
-  margin-bottom: 20px;
-}
-
-.travelcard-inner span {
-  color: #0C0B0B;
-  font-size: 18px;
-  display: block;
-  text-align: center;
-}
-
-.travelcard img {
-  height: 250px;
-  object-fit: cover;
-  width: 100%;
-  max-width: 320px;
-  margin: 0 auto;
-}
-
-.traveltips {
-  display: flex;
-  gap: 25px;
-  padding: 16px 0;
-}
-.traveltips img {
-  max-width: 45px;
-  height: 45px;
-  object-fit: cover;
-  text-align: left;
-}
-
-/*home-css-end*/
 /*cookie start*/
 .cookie-alert {
   position: fixed;
@@ -369,6 +267,81 @@ a.btn.btn-primary.accept-cookies {
 }
 
 /*footer-css-end*/
+/*contact-css-start*/
+.contact__section {
+  position: relative;
+  height: 350px;
+  background-image: url(../images/contactbanner.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  margin-top: 0;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.contact__section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: -1;
+}
+
+.about_us_content {
+  background: #969e69;
+  padding: 2rem;
+  margin: 30px 0;
+}
+
+.form-group {
+  margin-bottom: 2rem;
+}
+
+.input-control {
+  display: block;
+  width: 100%;
+  height: 4rem;
+  border: 1px solid #fff;
+  padding: 2rem 2rem;
+  background: transparent;
+  color: #fff;
+}
+
+textarea.input-control {
+  resize: none;
+  height: auto;
+}
+
+.form-group .submit-btn {
+  background: transparent;
+  border: 1px solid #fff;
+  transition: all 0.2s linear;
+  display: inline-block;
+  padding: 0.8rem 4rem;
+  color: #fff;
+  text-transform: capitalize;
+}
+.form-group .submit-btn:hover {
+  background-color: #fff;
+  color: #0C0B0B;
+}
+
+.form-group label {
+  display: inline-block;
+  padding-bottom: 5px;
+  color: #fff;
+  transition: all 0.2s linear;
+  text-transform: capitalize;
+  font-family: "Barlow", sans-serif;
+}
+
+/*contact-css-end/
+
 /*privacy-policy start*/
 .privacy__section {
   position: relative;
@@ -453,6 +426,108 @@ a.btn.btn-primary.accept-cookies {
 
 /*terms-conditon-end/
 
-/*# sourceMappingURL=style.css.map */
+/*home-css-start*/
+section.homebanner {
+  position: relative;
+  height: 650px;
+  background-image: url(../images/homebanner.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  object-fit: cover;
+}
+section.homebanner::before {
+  position: absolute;
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  display: inline-block;
+}
+
+.homebanner-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+section.hometext {
+  padding: 50px 0;
+}
+
+.hometext-text p {
+  color: #0C0B0B;
+}
+
+.discover-picture img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+.discover-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.discover-text.left {
+  padding-left: 20px;
+}
+
+.discover-text.right {
+  padding-right: 20px;
+}
+
+.traveltips-main {
+  box-shadow: 0px 0px 30px 0px rgba(199, 199, 199, 0.5);
+  padding: 10px 20px;
+  height: 100%;
+}
+
+span.travelblock {
+  font-size: 23px;
+  color: #969e69;
+}
+
+.travel {
+  padding: 50px 0;
+  position: relative;
+}
+.travel h3 {
+  margin-bottom: 20px;
+}
+
+.travelcard-inner span {
+  color: #0C0B0B;
+  font-size: 18px;
+  display: block;
+  text-align: center;
+}
+
+.travelcard img {
+  height: 250px;
+  object-fit: cover;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.traveltips {
+  display: flex;
+  gap: 25px;
+  padding: 16px 0;
+}
+.traveltips img {
+  max-width: 45px;
+  height: 45px;
+  object-fit: cover;
+  text-align: left;
+}
+
+/*home-css-end*/
+
 
 /*# sourceMappingURL=style.css.map */
