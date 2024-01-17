@@ -25,6 +25,12 @@ h1 {
   line-height: 75px;
   color: #fff;
 }
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 35px;
+    line-height: normal;
+  }
+}
 
 h2 {
   font-size: 40px;
@@ -252,6 +258,34 @@ span.travelblock {
 }
 
 /*home-css-end*/
+/*cookie start*/
+.cookie-alert {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  margin: 0 !important;
+  z-index: 999;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 500ms ease-out;
+  left: 0;
+}
+
+.cookie-alert.show {
+  opacity: 1;
+  transform: translateY(0%);
+  transition-delay: 1000ms;
+}
+
+a.btn.btn-primary.accept-cookies {
+  background: #969e69;
+  padding: 6px 22px;
+  font-size: 20px;
+  border: 1px solid #969e69;
+}
+
+/*cookie end*/
 /*footer-css-start*/
 .footer {
   background-color: #969e69;
@@ -335,6 +369,90 @@ span.travelblock {
 }
 
 /*footer-css-end*/
+/*privacy-policy start*/
+.privacy__section {
+  position: relative;
+  height: 350px;
+  background-image: url(../images/privacybanner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  margin-top: 0;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.privacy__section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: -1;
+}
 
+.privacy-policy {
+  padding: 40px 0;
+}
+.privacy-policy .content-wrap li {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: normal;
+  color: #0C0B0B;
+  font-family: "Barlow", sans-serif;
+}
+
+.terms {
+  padding: 40px 0;
+}
+.terms .content-wrap li {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  color: #0C0B0B;
+  font-family: "Barlow", sans-serif;
+}
+
+.content-wrap h4 {
+  color: #969e69;
+  font-size: 21px;
+  margin-bottom: 0;
+}
+.content-wrap p {
+  font-size: 16px;
+}
+
+/*privacy-policy end*/
+/*terms-conditon start*/
+.terms__section {
+  position: relative;
+  height: 350px;
+  background-image: url(../images/termsbanner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  margin-top: 0;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.terms__section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: -1;
+}
+
+/*terms-conditon-end/
+
+/*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */

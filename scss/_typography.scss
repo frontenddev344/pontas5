@@ -28,6 +28,11 @@ h1 {
     line-height: 75px;
     color: $clr-white;
 
+    @include mq(md) {
+        font-size: 35px;
+        line-height: normal;
+    }
+
 }
 
 h2 {
