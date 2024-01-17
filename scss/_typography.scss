@@ -1,0 +1,45 @@
+@import './variables';
+@import './mixins';
+
+body {
+    font-family: 'Marcellus', serif;
+}
+
+li {
+    list-style: none;
+}
+
+a,
+button {
+    font-family: 'Barlow', sans-serif;
+}
+
+p {
+    font-size: 17px;
+    font-weight: 400;
+    color: $clr-black;
+    font-family: 'Barlow', sans-serif;
+}
+
+
+h1 {
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 75px;
+    color: $clr-white;
+
+}
+
+h2 {
+    font-size: 40px;
+    line-height: normal;
+    font-weight: 500;
+    font-family: 'Marcellus', serif;
+}
+
+h3 {
+    font-size: 22px;
+    line-height: normal;
+    color: $clr-green;
+    font-family: 'Marcellus', serif;
+}

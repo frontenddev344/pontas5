@@ -1,0 +1,343 @@
+/*global start*/
+@import 'mixins';
+@import 'variables';
+@import 'typography';
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-size: 1.6rem;
+    font-family: 'Marcellus', serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:focus {
+    color: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/*global end*/
+
+/*header start*/
+header.site-header {
+    background: transparent;
+    font-size: 18px;
+    padding: 14px 0;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    width: 100%;
+    transition: .3s;
+}
+
+header.site-header.sticky {
+    background: $clr-black;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+    animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+    padding: 10px 0;
+    position: fixed;
+}
+
+.site-header .site-nav ul li a.active {
+    color: $clr-green;
+}
+
+.site-logo img {
+    width: 100%;
+    max-width: 140px;
+}
+
+.site-nav a {
+    padding: 8px 12px !important;
+    display: inline-block;
+    font-weight: 500;
+    color: $clr-white;
+
+    &:hover {
+        color: $clr-green;
+    }
+}
+
+
+.site-header {
+    padding: 10px 0;
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.closed-menu {
+    display: none;
+}
+
+.menu-toggle {
+    display: none !important;
+}
+
+
+/*header end*/
+
+/*home-css-start*/
+section.banner-section {
+    position: relative;
+    height: 550px;
+    background-image: url(../images/homebanner.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+
+    &::before {
+        position: absolute;
+        content: "";
+        background: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        display: inline-block;
+    }
+}
+
+.homebanner-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section.hometext {
+    padding: 50px 0;
+
+}
+
+.hometext-text {
+    p {
+        color: $clr-black;
+    }
+}
+
+.discover {
+    &-picture img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+
+    &-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+}
+
+.discover-text.left {
+    padding-left: 20px;
+}
+
+.discover-text.right {
+    padding-right: 20px;
+}
+
+.traveltips-main {
+    box-shadow: 0px 0px 30px 0px rgba(199, 199, 199, 0.5);
+    padding: 10px 20px;
+    height: 250px;
+}
+
+span.travelblock {
+    font-size: 23px;
+    color: $clr-green;
+}
+
+.travel {
+    padding: 50px 0;
+    position: relative;
+
+    h3 {
+        margin-bottom: 20px;
+    }
+
+}
+
+.travelcard-inner span {
+    color: $clr-black;
+    font-size: 18px;
+    display: block;
+    text-align: center;
+}
+
+.travelcard img {
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.traveltips {
+    display: flex;
+    gap: 25px;
+    padding: 16px 0;
+
+    img {
+        max-width: 45px;
+        height: 45px;
+        object-fit: cover;
+        text-align: left;
+    }
+}
+
+/*home-css-end*/
+
+/*footer-css-start*/
+.footer {
+    background-color: $clr-green;
+    padding: 50px 0;
+
+    &-links {
+        text-align: center;
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+    }
+
+    &-logo {
+        max-width: 160px;
+        margin: 0 auto 20px;
+    }
+
+    &-links {
+        h2 {
+            color: $clr-black;
+        }
+
+        a {
+            color: $clr-black;
+
+            &:hover {
+                color: $clr-white;
+            }
+        }
+    }
+
+    &-adresse {
+        h2 {
+            color: $clr-white;
+        }
+
+        p {
+            color: $clr-white;
+        }
+    }
+
+
+}
+
+.mails-names {
+    gap: 16px;
+    display: flex;
+    align-items: end;
+}
+
+.footer-mail {
+    margin: 20px 0;
+
+    a:hover {
+        color: $clr-white;
+    }
+}
+
+.social-signals {
+    text-align: center;
+
+    i {
+        color: $clr-white;
+        border-radius: 30px;
+        font-size: 18px;
+        margin: 0 10px;
+        border: 1px solid $clr-white;
+        height: 40px;
+        width: 40px;
+        text-align: center;
+        line-height: 36px;
+        transition: .3s all;
+
+        &:hover {
+            color: $clr-white;
+            transform: translateY(-10px);
+        }
+    }
+}
+
+.footer_bottom {
+    border-top: 1px solid #fff;
+    padding: 10px;
+    margin: 30px 0;
+
+    p {
+
+        text-align: center;
+
+        a {
+            color: $clr-black;
+
+            &:hover {
+                color: $clr-white;
+            }
+        }
+    }
+}
+
+
+/*footer-css-end*/
+
+
+
+/*# sourceMappingURL=style.css.map */
