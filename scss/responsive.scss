@@ -1,12 +1,12 @@
+@import './mixins';
+@import './variables';
+@import './typography';
 /*media queries start*/
 @media screen and (max-width: 1199px) {
     .container {
         padding: 0 20px;
     }
 
-    .site-logo img {
-        max-width: 180px;
-    }
 
     .site-nav a {
         padding: 8px 8px !important;
@@ -99,10 +99,6 @@
         align-items: center;
     }
 
-    .site-logo img {
-        max-width: 20rem;
-    }
-
     .site-nav ul {
         display: flex;
         flex-wrap: wrap;
@@ -127,16 +123,6 @@
         font-size: 45px;
     }
 
-    .menu-toggle .bar-1,
-    .bar-2,
-    .bar-3 {
-        width: 2.5rem;
-        height: 2px;
-        background-color: #ffffff;
-        margin: 0.6rem 0;
-        transition: all 0.3s linear;
-        display: block;
-    }
 
     ul.dropdown-content {
         position: absolute;
@@ -152,11 +138,6 @@
         display: block;
     }
 
-    // header.site-header.sticky .menu-toggle .bar-1,
-    // header.site-header.sticky .menu-toggle .bar-2,
-    // header.site-header.sticky .menu-toggle .bar-3 {
-    //     background-color: #ffffff;
-    // }
 
 
     .menu-toggle .bar-1,
@@ -164,7 +145,7 @@
     .bar-3 {
         width: 40px;
         height: 2px;
-        background-color: #000000;
+        background-color: $clr-white;
         margin: 0.6rem 0;
         transition: all 0.3s linear;
         display: block;
