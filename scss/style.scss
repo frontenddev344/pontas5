@@ -144,6 +144,11 @@ a.btn.btn-primary.accept-cookies {
     padding: 6px 22px;
     font-size: 20px;
     border: 1px solid $clr-green;
+    &:hover{
+        background-color: transparent;
+        color: $clr-green;
+        border: 1px solid $clr-green;
+    }
 }
 
 /*cookie end*/
