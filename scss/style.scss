@@ -300,7 +300,9 @@ a.btn.btn-primary.accept-cookies {
     background: transparent;
     color: $clr-white;
 }
-
+.input-control:focus-visible {
+    outline: none;
+}
 textarea.input-control {
     resize: none;
     height: auto;

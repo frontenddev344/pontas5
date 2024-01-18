@@ -319,6 +319,10 @@ a.btn.btn-primary.accept-cookies {
   color: #fff;
 }
 
+.input-control:focus-visible {
+  outline: none;
+}
+
 textarea.input-control {
   resize: none;
   height: auto;
