@@ -319,8 +319,8 @@ textarea.input-control {
 }
 
 .form-group .submit-btn {
-    background: transparent;
-    border: 1px solid $clr-white;
+    background: $clr-green;
+    border: 1px solid $clr-green;
     transition: all 0.2s linear;
     display: inline-block;
     padding: 0.8rem 4rem;
@@ -380,6 +380,7 @@ textarea.input-control {
             line-height: normal;
             color: $clr-black;
             font-family: "Barlow", sans-serif;
+            padding-bottom: 10px;
         }
     }
 }
@@ -394,6 +395,7 @@ textarea.input-control {
             line-height: normal;
             color: $clr-black;
             font-family: "Barlow", sans-serif;
+            padding-bottom: 15px;
         }
 
     }
@@ -408,6 +410,7 @@ textarea.input-control {
 
     p {
         font-size: 16px;
+        padding-bottom: 15px;
     }
 }
 

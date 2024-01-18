@@ -38,6 +38,11 @@ h2 {
   font-weight: 500;
   font-family: "Marcellus", serif;
 }
+@media screen and (max-width: 575px) {
+  h2 {
+    font-size: 25px;
+  }
+}
 
 h3 {
   font-size: 22px;
@@ -336,8 +341,8 @@ textarea.input-control {
 }
 
 .form-group .submit-btn {
-  background: transparent;
-  border: 1px solid #fff;
+  background: #969e69;
+  border: 1px solid #969e69;
   transition: all 0.2s linear;
   display: inline-block;
   padding: 0.8rem 4rem;
@@ -394,6 +399,7 @@ textarea.input-control {
   line-height: normal;
   color: #0C0B0B;
   font-family: "Barlow", sans-serif;
+  padding-bottom: 10px;
 }
 
 .terms {
@@ -405,6 +411,7 @@ textarea.input-control {
   line-height: normal;
   color: #0C0B0B;
   font-family: "Barlow", sans-serif;
+  padding-bottom: 15px;
 }
 
 .content-wrap h4 {
@@ -414,6 +421,7 @@ textarea.input-control {
 }
 .content-wrap p {
   font-size: 16px;
+  padding-bottom: 15px;
 }
 
 /*privacy-policy end*/

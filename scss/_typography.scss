@@ -40,6 +40,9 @@ h2 {
     line-height: normal;
     font-weight: 500;
     font-family: 'Marcellus', serif;
+    @include mq(sm){
+        font-size: 25px;
+    }
 }
 
 h3 {

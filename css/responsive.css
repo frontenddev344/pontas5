@@ -37,6 +37,11 @@ h2 {
   font-weight: 500;
   font-family: "Marcellus", serif;
 }
+@media screen and (max-width: 575px) {
+  h2 {
+    font-size: 25px;
+  }
+}
 
 h3 {
   font-size: 22px;
