@@ -175,10 +175,10 @@ a.btn.btn-primary.accept-cookies {
         }
 
         a {
-            color: $clr-black;
+            color: $clr-white;
 
             &:hover {
-                color: $clr-white;
+                color: $clr-black;
             }
         }
     }
@@ -205,8 +205,12 @@ a.btn.btn-primary.accept-cookies {
 .footer-mail {
     margin: 20px 0;
 
-    a:hover {
+    a {
         color: $clr-white;
+    }
+
+    a:hover {
+        color: $clr-black;
     }
 }
 
@@ -282,7 +286,6 @@ a.btn.btn-primary.accept-cookies {
 
 
 .about_us_content {
-    background: $clr-green;
     padding: 2rem;
     margin: 30px 0;
 }
@@ -295,14 +298,16 @@ a.btn.btn-primary.accept-cookies {
     display: block;
     width: 100%;
     height: 4rem;
-    border: 1px solid $clr-white;
+    border: 1px solid $clr-green;
     padding: 2rem 2rem;
     background: transparent;
-    color: $clr-white;
+    color: $clr-green;
 }
+
 .input-control:focus-visible {
     outline: none;
 }
+
 textarea.input-control {
     resize: none;
     height: auto;
@@ -326,7 +331,7 @@ textarea.input-control {
 .form-group label {
     display: inline-block;
     padding-bottom: 5px;
-    color: $clr-white;
+    color: $clr-green;
     transition: all 0.2s linear;
     text-transform: capitalize;
     font-family: "Barlow", sans-serif;
