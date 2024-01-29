@@ -558,7 +558,7 @@ span.travelblock {
 section.leisurebanner {
   position: relative;
   height: 550px;
-  background-image: url(../images/leisurebanner.jpeg);
+  background-image: url(../images/leisurebanner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -651,11 +651,6 @@ section.hotelbanner::before {
   height: 100%;
   z-index: 0;
   display: inline-block;
-}
-
-.why_choose_card img {
-  max-width: 70px;
-  filter: invert(1);
 }
 
 .why_choose_card h3 {
@@ -760,6 +755,12 @@ button.accordion-button {
   background-position: center;
   width: 25px;
   height: 25px;
+}
+
+.choose-picture img {
+  max-width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 
 /*hotel-css-end*/

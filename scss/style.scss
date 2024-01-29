@@ -144,7 +144,8 @@ a.btn.btn-primary.accept-cookies {
     padding: 6px 22px;
     font-size: 20px;
     border: 1px solid $clr-green;
-    &:hover{
+
+    &:hover {
         background-color: transparent;
         color: $clr-green;
         border: 1px solid $clr-green;
@@ -561,7 +562,7 @@ span.travelblock {
 section.leisurebanner {
     position: relative;
     height: 550px;
-    background-image: url(../images/leisurebanner.jpeg);
+    background-image: url(../images/leisurebanner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -670,10 +671,7 @@ section.hotelbanner {
     }
 }
 
-.why_choose_card img {
-    max-width: 70px;
-    filter: invert(1);
-}
+
 
 .why_choose_card h3 {
     margin-top: 22px;
@@ -766,7 +764,6 @@ button.accordion-button {
 }
 
 
-
 .accordion-button:not(.collapsed)::after {
     background-image: url(../images/accordion-minus.png);
     background-repeat: no-repeat;
@@ -781,6 +778,12 @@ button.accordion-button {
     background-position: center;
     width: 25px;
     height: 25px;
+}
+
+.choose-picture img {
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
 }
 
 /*hotel-css-end*/
